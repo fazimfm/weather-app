@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>React App</title>
+  </head>
+  <body>
+    <!-- This is the React mounting point -->
+    <div id="root"></div>
+  </body>
+</html>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("bgVideo");
+    video.playbackRate = 0.5;   // 0.5 = half speed, 1 = normal, 2 = double speed
+  });
+</script>
+
+<div class="bg">
+  <video id="bgVideo" autoplay muted loop>
+    <source src="bg.mp4" type="video/mp4" />
+  </video>
+
+  <div class="content-card">
+    <!-- Weather App UI -->
+  </div>
+</div>
+<!-- 
+<div class="weather-output">
+    <h2 class="location"><i class="fas fa-map-marker-alt"></i> Nagpur, IN</h2>
+    <img src="https://cdn-icons-png.flaticon.com/512/4052/4052984.png" class="weather-icon" alt="Weather Icon">
+    
+    <div class="main-temp">
+        <h1>26°C</h1>
+        <p class="condition">Haze</p>
+    </div>
+
+    <div class="weather-details-grid">
+        <div class="detail-box">
+            <span class="label">Feels Like</span>
+            <span class="value">🥰 26°C</span>
+        </div>
+        <div class="detail-box">
+            <span class="label">Humidity</span>
+            <span class="value">💧 36%</span>
+        </div>
+        <div class="detail-box">
+            <span class="label">Wind</span>
+            <span class="value">🌬️ 1.03 m/s</span>
+        </div>
+        <div class="detail-box">
+            <span class="label">Clouds</span>
+            <span class="value">☁️ 0%</span>
+        </div>
+    </div>
+</div> -->
